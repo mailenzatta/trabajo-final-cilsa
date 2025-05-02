@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Final del Curso</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-primary navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Trabajo Final del Curso</a>
+      </div>
+    </nav>
+
+    <div class="contenedorFecha">
+      <div class="fecha">
+        <p id="diaSemana"></p>
+        <p id="dia"></p>
+        <p>de</p>
+        <p id="mes"></p>
+        <p>del</p>
+        <p id="anio"></p>
+      </div>
+
+      <div class="reloj">
+        <p id="horas"></p>
+        <span>:</span>
+        <p id="minutos"></p>
+        <span>:</span>
+        <p id="segundos"></p>
+      </div>
+    </div>
+
+    <div class="container contenedor1 px-4 my-3">
+      <div id="infoPag"></div>
+
+      <hr color="blue" size="3" />
+
+      <div class="container contenedor2 py-3 px-4 my-3">
+        <h3>Centros de Formación CILSA</h3>
+        <p>
+          Son centros tecnológicos comunitarios que tienen por objetivos
+          promover el acceso y la capacitación en el uso de las Tecnologías de
+          la Información y la Comunicación, y la preparación para la inclusión
+          laboral de poblaciones en situación de vulnerabilidad social.
+          <a href="https://www.cilsa.org/">(Visita la página de CILSA)</a>. Se
+          encuentran en las ciudades de Santa Fe, Rosario, Córdoba, Mar del
+          Plata, La Plata, Mendoza y CABA.
+        </p>
+
+        <h3>Últimos visitantes</h3>
+        <h5 id="primerParrafo"></h5>
+
+        <h3>
+          Si quiere anotarse para los proximos cursos, presione "Añadir su
+          Nombre"
+        </h3>
+        <ul id="alumnos">
+          <li>Jesus Chirinos</li>
+          <li>Monica Figueredo</li>
+          <li>Florencia Campagna</li>
+          <li>Daniela Vallejos</li>
+          <li>Facundo Morales</li>
+        </ul>
+
+        <input
+          type="button"
+          class="visible btn btn-success"
+          id="botAgregar"
+          value="Añadir su nombre"
+          onclick="agregarNombre()"
+        />
+        <input
+          type="button"
+          class="oculto"
+          id="botEliminar"
+          value="Eliminar su nombre"
+          onclick="eliminarNombre()"
+        />
+      </div>
+
+      <hr color="blue" size="3" />
+    </div>
+
+    <div class="container contenedor3">
+      <div class="row my-5">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <form id="formTareas">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="titulo"
+                    placeholder="Agregar tarea"
+                    class="form-control mb-3"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="descripcion"
+                    cols="30"
+                    rows="10"
+                    placeholder="Descripción"
+                    class="form-control mb-3"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Guardar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tareas"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container contenedor4 py-3 px-4 my-3">
+      <h3>Conoce un poco más sobre nosotros</h3>
+      <p id="pSeguirLeyendo">
+        CILSA es una Organización No Gubernamental (O.N.G.) de bien público
+        fundada el 14 de mayo de 1966 en la ciudad de Santa Fe, República
+        Argentina.<span
+          id="textoAdicional"
+          class="oculto"
+          style="font-weight: bold"
+        >
+          Tiene como MISION: Promover la inclusión plena de personas con
+          discapacidad y personas provenientes de sectores marginados de la
+          sociedad como niños, niñas y adolescentes en situación de
+          vulnerabilidad social.</span
+        >
+      </p>
+
+      <a
+        href="#"
+        class="visible"
+        id="seguirLeyendo"
+        onclick="seguirLeyendo(event)"
+        >Seguir leyendo ➡</a
+      >
+      <a href="#" class="oculto" id="leerMenos" onclick="leerMenos(event)"
+        >⬅ Leer menos</a
+      >
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/reloj.js"></script>
+    <script src="js/tareas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
