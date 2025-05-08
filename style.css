@@ -5,6 +5,62 @@
 
 body {
   background-color: #ddf0ff !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #1a1a1a !important;
+  color: #ffffff;
+}
+
+.dark-theme .navbar.bg-primary {
+  background-color: #003087 !important;
+}
+
+.dark-theme .contenedorFecha {
+  border-bottom: 1px solid #555;
+}
+
+.dark-theme .contenedor1,
+.dark-theme .contenedor2,
+.dark-theme .contenedor4 {
+  background-color: #2c2c2c;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .contenedor4 {
+  background-color: #3c3c3c;
+}
+
+.dark-theme #infoPag {
+  background-color: #004aad;
+}
+
+.dark-theme a {
+  color: #bbdefb;
+}
+
+.dark-theme a:hover {
+  color: #90caf9;
+}
+
+.dark-theme h3 {
+  border-left: 5px solid #64b5f6;
+}
+
+.dark-theme .card {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.dark-theme .form-control {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+.dark-theme .form-control::placeholder {
+  color: #bbbbbb;
 }
 
 /*--estilo fecha-reloj--*/
