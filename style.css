@@ -8,6 +8,20 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #bbdefb !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
 body.dark-theme {
   background-color: #1a1a1a !important;
   color: #ffffff;
